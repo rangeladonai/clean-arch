@@ -1,9 +1,13 @@
 {
   "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.5",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.9.3"
   },
   "scripts": {
-    "start": "ts-node-dev --respawn --transpile-only src/index.ts"
+    "start": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "test-costumer": "npx jest tests/Domain/Entities/Costumer.test.ts"
   }
 }
